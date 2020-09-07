@@ -1,0 +1,34 @@
+<import src="../starscore/starscore.wxml" />
+
+<template name="recommend-goods-item">
+  <view class="img-box">
+    <image src="{{item.pic}}" class="image">
+      <image class='fresh-tag' src="/images/goodsDescription/fresh.png"></image>
+    </image>
+  </view>
+
+  <view class='goods-info-box'>
+    <view class="goods-title">{{item.name}}</view>
+    <view class='goods-introduction'>{{item.characteristic}}</view>
+    <view class="goods-price-box">
+      <wxc-price class='goods-minPrice' value='{{item.minPrice}}'></wxc-price>
+      <wxc-price class="goods-originalPrice" wx:if='{{item.originalPrice != 0}}' value='{{item.originalPrice}}' status='del'></wxc-price>
+    </view>
+    <view class="sellInformation">
+      <van-card
+        num="2"
+        tag="标签"
+        price="10.00"
+        desc="描述信息"
+        title="商品标题"
+        thumb="{{ imageURL }}"
+      >
+        <view slot="footer">
+          <van-button size="mini">按钮</van-button>
+          <van-button size="mini">按钮</van-button>
+        </view>
+      </van-card>
+    </view>
+  </view>
+
+</template>

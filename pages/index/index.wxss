@@ -1,0 +1,10 @@
+/**index.wxss**/
+
+/* 热销推荐 */
+.hot-goods-root{
+  width: 95%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+

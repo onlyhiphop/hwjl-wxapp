@@ -1,0 +1,55 @@
+
+<!--index.wxml-->
+<view class="container">
+  <van-tabs active="{{ active }}" bind:change="onChange" sticky>
+    <van-tab title="首页" name="index"></van-tab>
+    <van-tab title="店小二" name="aihelp"></van-tab>
+    <van-tab title="个人中心" name="profile"></van-tab>
+  </van-tabs>
+  <van-notice-bar
+  left-icon="volume-o"
+  speed="50"
+  text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
+  />
+  <scroll-view>
+    <the-swiper imgUrls="{{imgUrls}}" autoplay="true" />
+      <view>
+        <van-divider contentPosition="center">
+        <view>功能区</view>
+        </van-divider>
+        <van-grid direction="horizontal" column-num="3">
+          <van-grid-item icon="photo-o" text="点餐" />
+          <van-grid-item icon="photo-o" text="抽奖" />
+          <van-grid-item icon="photo-o" text="广场" />
+        </van-grid>
+      </view>
+
+      <view>
+        <van-divider contentPosition="center">
+          <view>热销推荐</view>
+        </van-divider>
+        <view class="hot-goods-root">
+          <view class="good-box" wx:for="{{ hotGoodsList }}" wx:for-item="item" wx:key="id" data-id="{{ item.id }}" bindtap="getDetail">
+            <template id="recommend-goods-item" data="item"></template>
+          </view>
+
+          <view wx:for="{{imgUrls}}" wx:for-item="item">
+            <van-card
+              num="2"
+              tag="标签"
+              price="10.00"
+              desc="描述信息"
+              title="商品标题"
+              thumb="{{ item }}"
+            >
+              <view slot="footer">
+                <van-button size="mini">按钮</van-button>
+                <van-button size="mini">按钮</van-button>
+              </view>
+            </van-card>
+          </view>
+        </view>
+      </view>
+  </scroll-view>
+
+</view>

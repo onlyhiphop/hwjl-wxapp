@@ -1,0 +1,5 @@
+<!--pages/headerTab/headerTab.wxml-->
+<template name="headerTab">
+  <text>头部tab {{ msg }}</text>
+  <button bindtap="btnTap">按钮</button>
+</template>
