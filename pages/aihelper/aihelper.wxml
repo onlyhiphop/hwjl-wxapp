@@ -1,4 +1,6 @@
 <!--pages/aihelper/aihelper.wxml-->
 <view>
-  
+  {{textPro}}
+  <button bindtap="showToast">点击事件</button>
+  {{person.name}}
 </view>
