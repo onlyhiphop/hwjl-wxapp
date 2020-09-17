@@ -1,10 +1,17 @@
 /**index.wxss**/
-
-/* 热销推荐 */
-.hot-goods-root{
-  width: 95%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+/**
+购物车
+**/
+.coupons-float{
+  width: 80rpx;
+  height: 80rpx;
+  position: fixed;
+  right: 35rpx;
+  bottom: 135rpx;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 90rpx;
+  box-shadow: 10rpx 5rpx 40rpx rgba(0,0,0, 0.5);
 }
 

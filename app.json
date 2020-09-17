@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/headerTab/headerTab"
+    "pages/headerTab/headerTab",
+    "pages/aihelper/aihelper"
   ],
   "window": {
     "backgroundTextStyle": "light",
