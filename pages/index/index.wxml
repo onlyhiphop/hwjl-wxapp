@@ -70,7 +70,7 @@
     </van-tab>
 
     <van-tab title="个人中心" name="/pages/profile/profile">
-    
+      <my-profile></my-profile>
     </van-tab>
   </van-tabs>
   

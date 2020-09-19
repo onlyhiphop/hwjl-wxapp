@@ -1,6 +1,21 @@
 <!--pages/aihelper/aihelper.wxml-->
-<view>
-  {{textPro}}
-  <button bindtap="showToast">点击事件</button>
-  {{person.name}}
+<view class="chat-contains">
+  <view class="chat-main">
+    <scroll-view class="chat-scroll-view"
+    scroll-y
+    >
+      <view wx:for="{{90}}" wx:for-item="{{item}}">
+        xxxxx --  {{item}}
+      </view>
+    </scroll-view>
+  </view>
+  <view class="chat-foot">
+    <view class="fast-ask">
+    </view>
+    <view class="send-input">
+      <input />
+      
+    </view>
+  </view>
 </view>
+

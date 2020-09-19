@@ -1,1 +1,23 @@
 /* pages/aihelper/aihelper.wxss */
+.chat-contains{
+ 
+}
+
+/* 聊天部分 */
+.chat-main{
+
+}
+.chat-main .chat-scroll-view{
+  height: calc(100vh - 100rpx);
+}
+
+/* 
+  底部
+*/
+.chat-foot{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 80rpx;
+  background-color: yellow;
+}

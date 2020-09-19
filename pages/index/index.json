@@ -11,6 +11,7 @@
     "van-rate": "@vant/weapp/rate/index",
     "van-icon": "@vant/weapp/icon/index",
     "van-toast": "@vant/weapp/toast/index",
-    "ai-helper": "/pages/aihelper/aihelper"
+    "ai-helper": "/pages/aihelper/aihelper",
+    "my-profile": "/pages/profile/profile"
   }
 }
